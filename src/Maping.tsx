@@ -29,11 +29,18 @@ const Mapping = () => {
               padding: '15px'
             }}
           >
-            menu list
-            <button>tes</button>
+            <ul>
+              <li>
+                lat: {getEvent?.latlng.lat}
+              </li>
+
+              <li>
+                lng: {getEvent?.latlng.lng}
+              </li>
+            </ul>
           </div>
         )}
-        onRightClick={(event) => console.log('on right click action')}
+        onRightClick={(event) => console.log('on right click action: ', event)}
       />
     </MapContainer>
   )
