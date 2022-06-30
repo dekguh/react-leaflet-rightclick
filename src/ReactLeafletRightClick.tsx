@@ -59,17 +59,13 @@ const ReactLeafletRightClick : React.FC<{
     if(mapContext.current.map) {
       mapSize.current = mapContext.current.map.getSize()
 
-      mapContext.current.map.on('click', () => {
+      mapContext.current.map.on('click dragstart zoom', () => {
         setIsShowMenu(false)
       })
 
       mapContext.current.map.on('resize', (event) => {
         mapSize.current = event.newSize
       }, [])
-
-      mapContext.current.map.on('dragstart', () => {
-        setIsShowMenu(false)
-      })
 
       // CHECK MENU HEIGHT
       const menuPointYisOverFlow = (pointY : number, menuWrapHeight : number, mapSize : Point) => {
