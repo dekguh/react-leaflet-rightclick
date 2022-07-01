@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent, render, screen } from '@testing-library/react'
-import ReactLeafletRightClick, { LeafletRightClickProvider, useLeafletRightClick } from '../ReactLeafletRightClick'
+import ReactLeafletRightClick, { LeafletRightClickProvider } from '../index'
 import { MapContainer, TileLayer } from 'react-leaflet'
 
 describe('ReactLeafletRightClick', () => {
