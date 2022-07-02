@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-rightclick",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "main": "index.js",
   "peerDependencies": {
